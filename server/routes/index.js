@@ -13,9 +13,9 @@ var https = require('https');
 
 // CONSTANTS
 
-apiKey = 'RGAPI-5860e978-d803-4e5a-b71c-5d12e0fef2c2';
+apiKey = 'RGAPI-5860e978-d803-4e5a-b71c-5d12e0fef2c2'; // Expires every 24 hours
 hostUrl = 'na1.api.riotgames.com';
-currentPatch = '8.14';
+currentPatch = '8.14'; // Remember to change currentPatch variable in SearchResults.js as well
 
 // SUMMONER NAME => ACCOUNT ID
 router.get('/summoner/info', function(req, res, next) {
@@ -111,6 +111,8 @@ class Game {
 		this.cspm = cspm;
 	}
 }
+
+// MATCH DATA
 
 router.get('/summoner/match', function(req, res, next) {
 
@@ -218,7 +220,6 @@ router.get('/summoner/match', function(req, res, next) {
 
 });
 
-
 router.get('/message', function(req, res, next) {
 	res.json('League of Legends Match History')
 })
@@ -228,5 +229,5 @@ module.exports = router;
 
 // Some general comments..
 // Would try and use the axios library next time, seems easier
-// Would improve the error sections in general, not very thorough or informative
+// Would improve the error sections in general - not very thorough or informative. To learn!
 // API key expires every 24 hours, so need to refresh

@@ -1,6 +1,6 @@
-# Express React Starter
+# League of Legends Match History App
 
-This is a template for using Express and React in the same project. It is based on Create React App.
+This app uses the Express React Starter Template. It is based on Create React App.
 
 Read the article: [Introducing Express React Starter](https://medium.com/burke-knows-words/introducing-express-react-starter-b6d299206a3a)
 

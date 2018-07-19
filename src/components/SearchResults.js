@@ -98,6 +98,7 @@ class SearchResults extends Component {
                             <th>LEVEL</th>
                             <th>CS</th>
                             <th>CSPM</th>
+                            {/*<th>ITEMS</th>*/}
                         </tr>
                     </thead>
                     <tbody className='body'>
@@ -114,6 +115,8 @@ class SearchResults extends Component {
                                     <td>{match.level}</td>
                                     <td>{match.cs}</td>
                                     <td>{match.cspm}</td>
+                                    {/*<td>{match.items}</td>
+                                    Was only able to get item codes, not names, so commented out */}
                                 </tr>
                         )}
                     </tbody>
@@ -124,3 +127,9 @@ class SearchResults extends Component {
 }
 
 export default SearchResults;
+
+/* Some improvements...
+1. Should add items data next time (instead of item codes)
+2. Obviously better styling
+3. Animations! I will try and implement GSAP in the next iteration of this app
+*/
