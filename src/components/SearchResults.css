@@ -1,0 +1,63 @@
+.headers {
+    font-size: 1.5em;
+}
+
+/* Search Form */
+form {
+    position: relative;
+    margin-top: 35px;
+}
+
+#summonername {
+    padding: 10px 5px 10px 5px;
+    width: 25%;
+    border: 1px solid #151b27;
+    border-radius: 5px;
+    outline: none;
+}
+
+#summonername:focus {
+    border: 1px solid #eb2b44;
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 5px 10px 5px;
+    border: 1px solid #151b27;
+    border-radius: 5px;
+    background-color: #eb2b44;
+    color: #F1F1F0;
+}
+
+/* Data */
+table {
+    width: 75%;
+    margin: 20px auto;
+    border: 1px solid #151b27;
+    border-radius: 15px;
+}
+
+.responsiveTable {
+    overflow-x: auto;
+}
+
+.body {
+    font-size: 1.3em;
+}
+
+/* Separating Summoner Spells Images */
+table td img {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Game State CSS */
+
+
+.won {
+    color: green;
+}
+
+.lost {
+    color: #eb2b44;
+}
