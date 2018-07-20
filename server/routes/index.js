@@ -6,16 +6,16 @@
 // 5. Get summoner data from individual match data.
 // 6. Use summoner data in Game class.
 
-var express = require('express');
-var app = express();
-var router = express.Router();
-var https = require('https');
+const express = require('express');
+const app = express();
+const router = express.Router();
+const https = require('https');
 
 // CONSTANTS
 
-apiKey = 'RGAPI-5860e978-d803-4e5a-b71c-5d12e0fef2c2'; // Expires every 24 hours
-hostUrl = 'na1.api.riotgames.com';
-currentPatch = '8.14'; // Remember to change currentPatch variable in SearchResults.js as well
+const apiKey = 'RGAPI-ba30d56b-0a80-4acf-8825-906f20f1db59'; // Expires every 24 hours
+const hostUrl = 'na1.api.riotgames.com';
+const currentPatch = '8.14'; // Remember to change currentPatch variable in SearchResults.js as well
 
 // SUMMONER NAME => ACCOUNT ID
 router.get('/summoner/info', function(req, res, next) {
